@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة دكتور محمد الحلو التعليمية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/whatsapp_button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="شعار منصة دكتور محمد الحلو" id="logo">
+            <h1>منصة دكتور محمد الحلو التعليمية</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="#about">عني</a></li>
+                <li><a href="courses.html">المقررات</a></li>
+                <li><a href="#quizzes">الاختبارات</a></li>
+                <li><a href="#forums">المنتديات</a></li>
+                <li><a href="#announcements">إعلانات</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+                <li id="user-specific-nav-item"><a href="#login-section">تسجيل الدخول</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>أهلاً وسهلاً بكم في منصة دكتور محمد الحلو</h2>
+            <p>مكانك الأول لتعلم علم الأحياء بإشراف الدكتور محمد الحلو.</p>
+            <p>للدخول إلى محتوى المنصة، يرجى تسجيل الدخول أو التسجيل باستخدام كود دعوة صالح.</p>
+        </section>
+
+        <section id="about" class="content-section">
+            <h2>عن الدكتور محمد الحلو</h2>
+            <p>الدكتور محمد الحلو، حاصل على درجة الدكتوراه في علم الأحياء، ويتمتع بخبرة واسعة في التدريس الأكاديمي والبحث العلمي. تهدف هذه المنصة إلى تقديم محتوى تعليمي متميز لطلاب علم الأحياء ومساعدتهم على تحقيق التفوق الدراسي.</p>
+        </section>
+
+        <section id="login-section" class="form-section">
+            <h2>تسجيل الدخول / التسجيل</h2>
+            <div class="form-container">
+                <form id="login-form">
+                    <h3>تسجيل الدخول</h3>
+                    <label for="login-username">اسم المستخدم أو البريد الإلكتروني:</label>
+                    <input type="text" id="login-username" name="username" required> <br>
+                    <label for="login-password">كلمة المرور:</label>
+                    <input type="password" id="login-password" name="password" required> <br>
+                    <button type="submit">دخول</button>
+                </form>
+                <hr>
+                <form id="registration-form">
+                    <h3>تسجيل مستخدم جديد</h3>
+                    <label for="reg-username">اسم المستخدم:</label>
+                    <input type="text" id="reg-username" name="username" required> <br>
+                    <label for="reg-email">البريد الإلكتروني:</label>
+                    <input type="email" id="reg-email" name="email" required> <br>
+                    <label for="reg-password">كلمة المرور:</label>
+                    <input type="password" id="reg-password" name="password" required> <br>
+                    <label for="reg-code">كود التسجيل (الدعوة):</label>
+                    <input type="text" id="reg-code" name="code" required> <br>
+                    <button type="submit">تسجيل</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>اتصل بنا</h2>
+            <p>للتواصل مع الدكتور محمد الحلو، يمكنكم استخدام البيانات التالية:</p>
+            <p>رقم الهاتف: 01208493074</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 منصة دكتور محمد الحلو. جميع الحقوق محفوظة.</p>
+        <p>تم تصميم الموقع من قبل عمرو شلبي</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/whatsapp_button.js"></script>
+</body>
+</html>
+

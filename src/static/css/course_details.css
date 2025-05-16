@@ -1,0 +1,108 @@
+/* General styles for the course details page */
+#course-detail-main {
+    padding: 20px;
+}
+
+#course-info h2 {
+    color: #337ab7; /* Consistent with other titles */
+    margin-bottom: 10px;
+}
+
+#course-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+#course-info p strong {
+    color: #333;
+}
+
+/* Styling for sections within course details */
+#course-detail-main section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+#course-detail-main section h3 {
+    color: #5cb85c; /* Green for section titles, or adjust as needed */
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Lectures List Styling */
+#lectures-list .lecture-item, 
+#quizzes-container .quiz-item,
+#forum-topics-container .forum-topic-item {
+    background-color: #fff;
+    border: 1px solid #e7e7e7;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+#lectures-list .lecture-item:hover,
+#quizzes-container .quiz-item:hover,
+#forum-topics-container .forum-topic-item:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#lectures-list .lecture-item h4, 
+#quizzes-container .quiz-item h4,
+#forum-topics-container .forum-topic-item h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #337ab7;
+}
+
+#lectures-list .lecture-item p,
+#quizzes-container .quiz-item p,
+#forum-topics-container .forum-topic-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.lecture-item .lecture-link, 
+.quiz-item .quiz-link,
+.forum-topic-item .topic-link {
+    display: inline-block;
+    background-color: #5bc0de;
+    color: white;
+    padding: 6px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: background-color 0.3s ease;
+}
+
+.lecture-item .lecture-link:hover,
+.quiz-item .quiz-link:hover,
+.forum-topic-item .topic-link:hover {
+    background-color: #31b0d5;
+}
+
+/* Placeholder text styling */
+#lectures-list p,
+#quizzes-container p,
+#forum-topics-container p {
+    color: #777;
+    font-style: italic;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #course-detail-main {
+        padding: 15px;
+    }
+    #course-detail-main section {
+        padding: 15px;
+    }
+}
+

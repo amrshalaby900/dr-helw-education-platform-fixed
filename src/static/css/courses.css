@@ -1,0 +1,80 @@
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.course-card h3 {
+    margin-top: 0;
+    color: #337ab7; /* A shade of blue, can be adjusted */
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.course-card .details-link {
+    display: inline-block;
+    background-color: #5cb85c;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.course-card .details-link:hover {
+    background-color: #4cae4c;
+}
+
+/* Styling for the logo in the header */
+header .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center items if nav is below or for smaller screens */
+    padding: 10px 20px;
+}
+
+header #logo {
+    height: 60px; /* Adjust as needed */
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem; /* Adjust as needed */
+}
+
+/* Responsive adjustments for header if needed */
+@media (max-width: 768px) {
+    header .logo-container {
+        flex-direction: column;
+    }
+    header #logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+

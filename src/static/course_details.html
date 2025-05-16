@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل المقرر - منصة دكتور محمد الحلو</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/course_details.css"> <!-- Specific CSS for course details -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="شعار منصة دكتور محمد الحلو" id="logo">
+            <h1>منصة دكتور محمد الحلو التعليمية</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="index.html#about">عني</a></li>
+                <li><a href="courses.html">المقررات</a></li>
+                <li><a href="#quizzes">الاختبارات</a></li>
+                <li><a href="#forums">المنتديات</a></li>
+                <li><a href="#announcements">إعلانات</a></li>
+                <li><a href="index.html#contact">اتصل بنا</a></li>
+                <!-- Login/logout/profile link here -->
+            </ul>
+        </nav>
+    </header>
+
+    <main id="course-detail-main">
+        <section id="course-info">
+            <h2 id="course-title">جاري تحميل تفاصيل المقرر...</h2>
+            <p id="course-description"></p>
+            <p><strong>المُنشئ:</strong> <span id="course-creator"></span></p>
+            <p><strong>تاريخ الإنشاء:</strong> <span id="course-creation-date"></span></p>
+        </section>
+
+        <section id="course-lectures">
+            <h3>محاضرات المقرر</h3>
+            <div id="lectures-list">
+                <!-- Lectures will be loaded here by JavaScript -->
+                <p>جاري تحميل المحاضرات...</p>
+            </div>
+        </section>
+        
+        <section id="course-quizzes-list">
+            <h3>اختبارات المقرر</h3>
+            <div id="quizzes-container">
+                <!-- Quizzes related to this course will be loaded here -->
+                <p>جاري تحميل الاختبارات...</p>
+            </div>
+        </section>
+
+        <section id="course-forum-topics">
+            <h3>مواضيع النقاش الخاصة بالمقرر</h3>
+            <div id="forum-topics-container">
+                <!-- Forum topics related to this course will be loaded here -->
+                <p>جاري تحميل مواضيع النقاش...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 منصة دكتور محمد الحلو. جميع الحقوق محفوظة.</p>
+        <p>تم تصميم الموقع من قبل عمرو شلبي</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/course_details.js"></script> <!-- Specific JS for course details -->
+</body>
+</html>
+

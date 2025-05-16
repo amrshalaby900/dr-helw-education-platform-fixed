@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم - منصة دكتور محمد الحلو</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin_dashboard.css"> <!-- Specific CSS for admin dashboard -->
+    <link rel="stylesheet" href="css/whatsapp_button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="شعار منصة دكتور محمد الحلو" id="logo">
+            <h1>منصة دكتور محمد الحلو التعليمية</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="courses.html">المقررات</a></li>
+                <!-- Admin specific nav items can be added here or on the dashboard itself -->
+                <li><a href="#" id="logout-link-admin">تسجيل الخروج</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="admin-dashboard-main">
+        <h1>لوحة تحكم الأدمن</h1>
+        
+        <section id="admin-stats">
+            <h2>نظرة عامة</h2>
+            <!-- Stats like total users, courses, etc. will be loaded here -->
+            <p>جاري تحميل الإحصائيات...</p>
+        </section>
+
+        <section id="user-management">
+            <h2>إدارة المستخدمين والأكواد</h2>
+            <button id="generate-code-btn">توليد كود تسجيل جديد</button>
+            <div id="generated-code-area" style="margin-top: 10px; padding: 10px; border: 1px dashed #ccc; display: none;"></div>
+            <!-- User list and management options -->
+            <p>جاري تحميل قائمة المستخدمين...</p>
+        </section>
+
+        <section id="course-management">
+            <h2>إدارة المقررات الدراسية</h2>
+            <!-- Add course, edit course, delete course functionalities -->
+            <button onclick="location.href=\'#add-course\'">إضافة مقرر جديد</button> <!-- Placeholder -->
+            <p>جاري تحميل قائمة المقررات للإدارة...</p>
+        </section>
+        
+        <section id="lecture-management">
+            <h2>إدارة المحاضرات</h2>
+            <!-- Add lecture, edit lecture, delete lecture functionalities, link to courses -->
+            <p>جاري تطوير واجهة إدارة المحاضرات...</p>
+        </section>
+
+        <section id="quiz-management">
+            <h2>إدارة الاختبارات</h2>
+            <!-- Add quiz, edit quiz, manage questions -->
+            <p>جاري تطوير واجهة إدارة الاختبارات...</p>
+        </section>
+
+        <section id="announcement-management">
+            <h2>إدارة الإعلانات</h2>
+            <!-- Add announcement, edit announcement -->
+            <p>جاري تطوير واجهة إدارة الإعلانات...</p>
+        </section>
+
+        <!-- Add more sections for forum management, etc. as needed -->
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 منصة دكتور محمد الحلو. جميع الحقوق محفوظة.</p>
+        <p>تم تصميم الموقع من قبل عمرو شلبي</p>
+    </footer>
+
+    <script src="js/main.js"></script> <!-- Contains general functions like logout -->
+    <script src="js/admin_dashboard.js"></script> <!-- Specific JS for admin dashboard -->
+    <script src="js/whatsapp_button.js"></script>
+</body>
+</html>
+
