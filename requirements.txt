@@ -1,5 +1,8 @@
 Flask==3.1.0
 Flask-SQLAlchemy==3.1.1
+Flask-CORS==5.0.1
 PyMySQL==1.1.1
 SQLAlchemy==2.0.40
 cryptography==36.0.2
+pdfkit==1.0.0
+weasyprint==65.1

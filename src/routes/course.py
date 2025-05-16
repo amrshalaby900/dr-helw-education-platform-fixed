@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, request, jsonify, session
-from src.models.user import db, User, Course, Lecture # Assuming User model is in the same file or imported
+from src.models.user import db, User
+from src.models.course import Course, Lecture
 from datetime import datetime
 
 course_bp = Blueprint("course_routes", __name__)

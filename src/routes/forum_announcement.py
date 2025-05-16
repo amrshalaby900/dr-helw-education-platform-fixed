@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, request, jsonify, session
-from src.models.user import db, User, Course, ForumTopic, ForumPost, Announcement
+from src.models.user import db, User
+from src.models.course import Course
+from src.models.forum_announcement import ForumTopic, ForumPost, Announcement
 from datetime import datetime
 
 forum_announcement_bp = Blueprint("forum_announcement_routes", __name__)

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, request, jsonify, session
-from src.models.user import db, User, Course, Lecture, Quiz, Question, StudentAnswer
+from src.models.user import db, User
+from src.models.course import Course, Lecture
+from src.models.quiz import Quiz, Question, StudentAnswer
 from datetime import datetime
 
 quiz_bp = Blueprint("quiz_routes", __name__)

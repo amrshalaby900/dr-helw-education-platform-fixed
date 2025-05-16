@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from flask import Blueprint, request, jsonify, session
-from src.models.user import db, User, Lecture, StudentProgress # Assuming User, Lecture, StudentProgress models are defined
+from src.models.user import db, User
+from src.models.course import Course, Lecture
+from src.models.progress import StudentProgress
 from datetime import datetime
 
 progress_bp = Blueprint("progress_routes", __name__)
